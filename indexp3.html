@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1ea92ee36c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      showgames(3);
+    };
+    </script>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"><i class="fa fa-gamepad" id="icons"></i>AndroZen Gamerz</a>
+          <form class="d-flex" role="search" onsubmit="searchshow(event)" id="searchInput">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar bg-body-tertiary">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Genre</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Adventure</a></li>
+            <li><a class="dropdown-item" href="#">Racing</a></li>
+            <li><a class="dropdown-item" href="#">Arcade</a></li>
+            <li><a class="dropdown-item" href="#">Fighting</a></li>
+            <li><a class="dropdown-item" href="#">Fantasy</a></li>
+            <li><a class="dropdown-item" href="#">Horror</a></li>
+            <li><a class="dropdown-item" href="#">Mystery</a></li>
+            <li><a class="dropdown-item" href="#">Puzzle</a></li>
+            <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+            <li><a class="dropdown-item" href="#">Shooting</a></li>
+            <li><a class="dropdown-item" href="#">Simulation</a></li>
+            <li><a class="dropdown-item" href="#">Sports</a></li>
+            <li><a class="dropdown-item" href="#">Strategy</a></li>
+            <li><a class="dropdown-item" href="#">War</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Platform</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Android</a></li>
+            <li><a class="dropdown-item" href="#">IOS</a></li>
+            <li><a class="dropdown-item" href="#">Java</a></li>
+            <li><a class="dropdown-item" href="#">PC</a></li>
+            <li><a class="dropdown-item" href="#">Emulators</a></li>
+            <li><a class="dropdown-item" href="#">Others</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pricing</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Free</a></li>
+            <li><a class="dropdown-item" href="#">Paid</a></li>
+            <li><a class="dropdown-item" href="#">Freemium</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner"><p>Most Trending Games</p>
+          <div class="carousel-item active">
+            <div><a href=""><img src="https://www.wallpaperflare.com/static/602/823/679/gta-gta-5-2015-heroes-wallpaper.jpg" class="d-block" alt="GTA V"></a></div>
+            <div><a href=""><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/901583/header.jpg?t=1509997232" class="d-block" alt="GTA IV"></a></div>
+            <div><a href=""><img src="https://preview.redd.it/o1s2rl9rh0h71.jpg?width=640&crop=smart&auto=webp&s=f8cf1dd11f90109eb16e18accc4755eaceeccd7b" class="d-block" alt="GTA Trilogy The Definitive Edition"></a></div>
+          </div>
+          <div class="carousel-item">
+            <div><a href=""><img src="https://sm.ign.com/ign_in/screenshot/default/vtn2hdrxvjx31_rr4c.jpg" class="d-block" alt="Call of Duty mobile"></a></div>
+            <div><a href=""><img src="https://rukminim2.flixcart.com/image/750/900/kr58yvk0/poster/t/g/t/medium-bgmi-poster-for-wall-45-original-imag5y4qxmvsh7jg.jpeg?q=20&crop=false" class="d-block" alt="Battleground mobile india"></a></div>
+            <div><a href=""><img src="https://rukminim2.flixcart.com/image/850/1000/knan98w0/poster/a/w/z/medium-free-fire-game-wall-poster-for-room-with-gloss-lamination-original-imag2ykne3z7zuxh.jpeg?q=90&crop=false" class="d-block" alt="Free Fire"></a></div>
+          </div>
+          <div class="carousel-item">
+            <div><a href=""><img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/QeJWAaLcYNOpCv7yCVZZEOY5.jpg" class="d-block" alt="Spider-Man"></a></div>
+            <div><a href=""><img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1420/HcLcfeQBXd2RiQaCeWQDCIFN.jpg" class="d-block" alt="Spider-Man Miles Morales"></a></div>
+            <div><a href=""><img src="https://insomniac.games/wp-content/uploads/2023/07/MSM2_Story_Duo_4k_Legal_2023-scaled.jpg" class="d-block" alt="Spider-Man 2"></a></div>
+          </div>
+          <div class="carousel-item">
+            <div><a href=""><img src="https://c4.wallpaperflare.com/wallpaper/617/640/1019/red-dead-redemption-john-marston-video-games-western-wallpaper-preview.jpg" class="d-block" alt="Red Dead Redemption"></a></div>
+            <div><a href=""><img src="https://rukminim2.flixcart.com/image/750/900/l2z26q80/poster/e/x/9/small-yaa-cyberpunk-2077-poster-set-4-18inchx12inch-cyberpunk-04-original-image72k8hv8ubgj.jpeg?q=20&crop=false" class="d-block" alt="Cyberpunk 2077"></a></div>
+            <div><a href=""><img src="https://m.media-amazon.com/images/I/81bYB7hJ87L.jpg" class="d-block" alt="Red Dead Redemption 2"></a></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="recent-games">
+        <div class="header">
+          Recent Games
+        </div>
+        <div class="games">
+        </div>
+      </div>
+      <div class="button">
+        <a href="./indexp2.html"><i class="fa-solid fa-chevron-left fa-beat"></i></a>
+        <a href="./index.html">1</a>
+        <a href="./indexp2.html">2</a>
+        <a href="./indexp3.html">3</a>
+        <a href="./indexp3.html"><i class="fa-solid fa-chevron-right fa-beat"></i></a>
+      </div>
+      <div class="base">
+        <a class="navbar-brand"><i class="fa fa-gamepad" id="icons" style="color: white;"></i> AndroZen Gamerz</a>
+        <div class="icons">Follow Us on
+          <a href="">
+            <i class="fa-brands fa-facebook fa-flip"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-flip fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-flip fa-discord"></i>
+          </a>
+          <a href="https://www.youtube.com/@androzengamerz8893">
+            <i class="fa-brands fa-flip fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </body>
+    </html>

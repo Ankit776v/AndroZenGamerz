@@ -1,0 +1,15 @@
+const counterDisplay2 = document.getElementById('counter2');
+    const incrementBtn2 = document.getElementById('fileContent2');
+    if(counterDisplay2){
+        // Initialize counter value from localStorage, or set it to 0 if not present
+        let counter2 = localStorage.getItem('counter2') ? parseInt(localStorage.getItem('counter2')) : 0;
+        counterDisplay2.innerText = counter2;
+        
+        // Function to increase the counter when the button is pressed
+        incrementBtn2.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent default action of anchor tag
+          counter2++; // Increase the counter value
+          counterDisplay2.innerText = counter2; // Update the displayed value
+          localStorage.setItem('counter2', counter2); // Store the updated value in localStorage
+        });
+    }
